@@ -5,23 +5,23 @@
         <div class="card__face card__face--front"></div>
       </div>
     </div>
-    <form class="form" @click="flip_card('form')">
+    <form class="form" action="http://localhost:8080/user/login/" method="post" @click="flip_card('form')">
       <h2>會員登入</h2>
       <div class="group">
         <label for="user_id">帳號</label>
-        <input type="text" name id="user_id" />
+        <input type="text" name="username" id="user_id" />
       </div>
       <div class="group">
         <label for="user_password">密碼</label>
-        <input type="password" name id="user_password" />
+        <input type="password" name="password" id="user_password" />
       </div>
 
       <button class="btn_google">
-        <img src="../assets/google.svg" style="width:30px" /> google註冊
+        <img src="../assets/google.svg" style="width:30px" /> google登入
       </button>
       <div class="btn-group">
-        <button class="btn">取消</button>
         <button class="btn">註冊</button>
+        <button class="btn" type="submit">登入</button>
       </div>
     </form>
   </div>

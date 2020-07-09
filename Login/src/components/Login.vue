@@ -5,7 +5,7 @@
         <div class="card__face card__face--front"></div>
       </div>
     </div>
-    <form class="form" action="http://localhost:8080/user/login/" method="post" @click="flip_card('form')">
+    <form class="form" action="https://ideasky.atm.ncu.edu.tw/jwt/user/login/" method="post" @click="flip_card('form')">
       <h2>會員登入</h2>
       <div class="group">
         <label for="user_id">帳號</label>
